@@ -3,7 +3,7 @@ import styles from '../styles/Home.module.css'
 import { uuid } from 'uuidv4'; 
 
 export async function getStaticProps(context) {
-  const result = await fetch(`https://beige-eagles-kick-186-225-235-47.loca.lt/static/${uuid()}`).then(res => res.json());
+  const result = await fetch(`https://nine-dogs-dig-186-225-235-50.loca.lt/static/${uuid()}`).then(res => res.json());
 
   return {
     props: { content: result.message },

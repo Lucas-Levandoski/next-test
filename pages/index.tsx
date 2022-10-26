@@ -21,7 +21,7 @@ function Home({ content }) {
 }
 
 Home.getInitialProps = async (ctx) => {
-  const result = await fetch(`https://beige-eagles-kick-186-225-235-47.loca.lt/default/${uuid()}`).then(res => res.json());
+  const result = await fetch(`https://nine-dogs-dig-186-225-235-50.loca.lt/default/${uuid()}`).then(res => res.json());
 
   return { content: result.message };
 }
