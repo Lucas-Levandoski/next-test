@@ -21,7 +21,7 @@ function Home({ content }) {
 }
 
 Home.getInitialProps = async (ctx) => {
-  const result = await fetch(`https://hot-walls-sing-186-225-235-50.loca.lt/default/${uuid()}`).then(res => res.json());
+  const result = await fetch(`${process.env.NODE_API_URL}/default/${uuid()}`).then(res => res.json());
 
   return { content: result.message };
 }
